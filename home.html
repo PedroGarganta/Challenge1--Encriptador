@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="texto-botones-logo">
+            <div class="logo">
+                <img src="/padlock_locked_security_icon_178872 (1).png" alt="">
+            </div>
+            <div class="texto">
+                <textarea name="" id="texto-encriptar" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="botones">
+                <button class="encriptar" id="encriptar">Encriptar</button>
+                <button class="desencriptar" id="desencriptar">Desencriptar</button>
+            </div>
+        </div>
+            <div class="resultado">
+                <textarea name="texto-desencriptar" class="ocultar" id="texto-desencriptar" cols="30" rows="10" readonly="readonly"></textarea>
+                <div class="mostrar">
+                    <div class="contenedor-img">
+                        <img src="./magnifier.png" alt="">
+                    </div>
+                    <p class="texto-img">Ningun mensaje fue encontrado</p>
+                </div>
+            </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    display: block;
+}
+.texto-botones-logo{
+    display: inline-block;
+    border-radius: 20px;
+    /* border: 1px solid #111; */
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto-botones-logo .botones button{
+    height: 45px;
+    width: 170px;
+    border-radius: 15px;
+    /* box-shadow: 7px 7px 18px 1px rgba(0,0,0,0.75); */
+    transition: .3s;
+    cursor: pointer;
+}
+.encriptar{
+    background: #111;
+    color: #fff;
+}
+.texto-botones-logo .botones button:hover{
+    transform: scale(1.1);
+}
+.texto-botones-logo .texto textarea{
+    display: block;
+    width: 600px;
+    height: 400px;
+    margin-top: 30px;
+    margin: auto;
+    text-align: center;
+    border: 0;
+    text-size-adjust: 1.3em;
+}
+::placeholder{
+    color: red;
+    font-size: 2em;
+
+}
+.contenedor-img{
+    width: 200px;
+    margin: 0;
+    margin-top: 40%;
+}
+.contenedor-img img{
+    width: 100%;
+}
+.resultado{
+    width: 500px;
+    height: 700px;
+    border-radius: 20px;
+    /* border: 1px solid #111; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.resultado p{
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.resultado textarea{
+    height: 70%;
+    width: 70%;
+    border: none;
+    disabled: true;
+}
+.ocultar{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+
+@media (max-width: 800px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .contenedor{
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+    .texto-botones-logo{
+        width: 100%;
+    }
+    .logo{
+        padding: 20px;
+    }
+    .texto-botones-logo .texto textarea{
+        width: 400px;
+        height: 200px;
+    }
+    .resultado{
+        width: 100%;
+    }
+    .resultado textarea{
+        height: 70%;
+        width: 70%;
+        border: none;
+    }
+
+}
